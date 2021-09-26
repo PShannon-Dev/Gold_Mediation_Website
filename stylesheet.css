@@ -2,7 +2,6 @@ html,body{
   margin: 0px;
   background-color: #2f3243;
   max-width: initial;
-  overflow-x: hidden !important;
 }
 
 .information-box{
