@@ -74,7 +74,7 @@ html,body{
 
 /*bio*/
 .bio-image{
-  height: 800px;
-  width: 883px;
+  height: 1400px;
+  width: 100%;
   background-size: cover;
 }
