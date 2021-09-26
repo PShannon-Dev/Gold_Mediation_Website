@@ -1,5 +1,80 @@
-.header {
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
-  }
+html,body{
+  margin: 0px;
+  background-color: #2f3243;
+  max-width: initial;
+  overflow-x: hidden !important;
+}
+
+.information-box{
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+/*nav bar*/
+.navigation-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-nav{
+  display: flex;
+}
+
+.right-nav{
+  display: flex;
+}
+.navigation-wrapper > .left-nav > div{
+  margin-right: 20px;
+  font: size 1.5em;
+  text-transform: uppercase;
+}
+
+.navigation-wrapper > .right-nav > div{
+  margin-right: 20px;
+  font: size 0.9em;
+  text-transform: uppercase;
+  padding-top: 75px;
+}
+
+.nav-link-wrapper{
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+  color: black;
+}
+
+.active-nav-link{
+  border-bottom: 1px solid black;
+}
+
+
+.active-nav-link a{
+  color: black !important;
+}
+/* logo */
+.logo-image{
+  height: 120px;
+  width: 272px;
+}
+
+/*bio*/
+.bio-image{
+  height: 800px;
+  width: 883px;
+  background-size: cover;
+}
