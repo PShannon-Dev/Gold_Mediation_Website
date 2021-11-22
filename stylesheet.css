@@ -1,7 +1,16 @@
-html,body{
+body{
+  height: 1000vh;
   margin: 0px;
   background-color: #2f3243;
   max-width: initial;
+}
+
+.container{
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url();
 }
 
 .information-box{
