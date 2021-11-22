@@ -10,15 +10,38 @@ body{
   height: 500px;
   background-position: center;
   background-size: cover;
-  background-image: url();
+  background-image: url(https://github.com/Modest-Creations/Gold_Mediation_Website/blob/main/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg?raw=true);
+  background-attachment: fixed;
+
+  display: flex;
+  position: relative;
 }
 
-.information-box{
+/* calendar */
+.calendar{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div, iframe{
+  margin: auto;
+  display:block;
+  width: 100%;
+}
+.header{
+  color: white;
+}
+
+/* .information-box{
   background-color: white;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
-}
+} */
+
+
 /*nav bar*/
 .navigation-wrapper{
   display: flex;
@@ -53,7 +76,7 @@ body{
 }
 
 .nav-link-wrapper a{
-  color: #8a8a8a;
+  color: #2f3243;
   text-decoration: none;
   transition: color 0.5s;
 }
@@ -74,6 +97,7 @@ body{
 .active-nav-link a{
   color: black !important;
 }
+
 /* logo */
 .logo-image{
   height: 120px;
