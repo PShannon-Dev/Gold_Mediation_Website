@@ -1,13 +1,20 @@
 body{
-  height: 1000vh;
+  height: 200vh;
   margin: 0px;
-  background-color: white;
+  background-color: whitesmoke;
   max-width: initial;
+}
+
+footer{
+  bottom: 0;
+  position: absolute;
+  background-color: #2f3243;
+  display: block;
 }
 
 .container{
   width: 100%;
-  height: 500px;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   background-image: url(https://github.com/Modest-Creations/Gold_Mediation_Website/blob/main/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg?raw=true);
@@ -29,9 +36,6 @@ div, iframe{
   margin: auto;
   display:block;
   width: 100%;
-}
-.header{
-  color: white;
 }
 
 /* .information-box{
@@ -106,16 +110,45 @@ div, iframe{
   width: 272px;
 }
 
+
+/* Content */
+.content-wrapper{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  height: 2000px;
+}
+
 .logo{
   margin: auto 5px;
   float: left;
-  width: 800px;
+  width: 40%;
+  display: flex;
 
 }
 
-/*bio*/
-.bio-image{
-  height: 1400px;
+.about{
+  color: black;
+  float: right;
+  display: flex;
+}
+
+/* Page End */
+.Page-End{
+  background-color: #2f3243;
+  position: absolute;
+  bottom: 0;
+  height: 150px;
   width: 100%;
-  background-size: cover;
+
+}
+
+.Gold-information{
+  position: absolute;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  bottom: 0;
+
+  text-align: center;
+  color: white;
 }
