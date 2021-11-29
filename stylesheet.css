@@ -1,22 +1,15 @@
 body{
-  height: 200vh;
+  height: auto;
   margin: 0px;
   background-color: whitesmoke;
   max-width: initial;
 }
 
-footer{
-  bottom: 0;
-  position: absolute;
-  background-color: #2f3243;
-  display: block;
-}
-
 .container{
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-image: url(https://github.com/Modest-Creations/Gold_Mediation_Website/blob/main/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg?raw=true);
   background-attachment: fixed;
 
@@ -26,24 +19,23 @@ footer{
 
 /* calendar */
 .calendar{
+  margin-top: 10px;
+  margin-bottom: 10px;
   position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+
 }
 
-div, iframe{
+div{
   margin: auto;
   display:block;
   width: 100%;
 }
 
-/* .information-box{
-  background-color: white;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-} */
+iframe{
+  margin: auto;
+  width: 80%;
+}
 
 
 /*nav bar*/
@@ -53,17 +45,23 @@ div, iframe{
   overflow: hidden;
   background-color: #2f3243;
   position: fixed;
+  /* position: -webkit-sticky; /* Safari */
+  /* position: sticky; */
   top: 0;
+  /* margin-top: 50px; */
   width: 100%;
-  opacity: 75%;
+  opacity: 90%;
   text-align: center;
+  display: flex;
+
+  z-index: 1;
 }
 
-.right-nav{
+.nav-bar{
   display: flex;
 }
 
-.navigation-wrapper > .right-nav > div{
+.navigation-wrapper > .nav-bar > div{
   font-size: 20px;
   text-transform: uppercase;
   padding-top: 20px;
@@ -76,79 +74,86 @@ div, iframe{
   transition: border-bottom 0.5s;
   width: auto;
 }
-
 .nav-link-wrapper a{
   color: black;
   text-decoration: none;
   transition: color 0.5s;
   
 }
-
 .nav-link-wrapper:hover{
   border-bottom: 1px solid gold;
   width: auto;
 
 }
-
 .nav-link-wrapper a:hover{
   color: gold;
 }
-
 .active-nav-link{
   border-bottom: 1px solid goldenrod;
   width: auto;
 }
-
-
 .active-nav-link a{
   color: goldenrod !important;
 }
 
-/* logo */
-.logo-image{
-  height: 120px;
-  width: 272px;
-}
-
-
 /* Content */
 .content-wrapper{
-  display: inline;
+  position: relative;
   align-items: center;
   justify-content: center;
-  height: 2000px;
+  height: 100vh;
 }
 
-.logo{
+.about-section{
+  border-style: solid;
+}
+
+.office-inside{
   margin: auto 5px;
   float: left;
-  width: 40%;
-  display: flex;
-
+  width: 30%;
+  display: block;
+  border: 2px solid black;
+  border-radius: 8px;
 }
 
 .about{
   color: black;
-  float: right;
-  display: flex;
+  float: left;
+  display: block;
+  font-size: 4vh;
+  width: 59%;
+
 }
 
 /* Page End */
 .Page-End{
+  position: relative;
   background-color: #2f3243;
-  position: absolute;
   bottom: 0;
-  height: 150px;
+  height: 50vh;
   width: 100%;
 
 }
 
-.Gold-information{
-  position: absolute;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  bottom: 0;
+.column{
+  width: 50%;
+  display: inline;
+  float: left;
 
+  color: grey;
   text-align: center;
-  color: white;
+
+  font-size: 2vh;
+}
+
+.logo-end{
+  display: block;
+  width: 15%;
+}
+
+.Gold-information{
+  padding-top: auto 5px;
+  padding-bottom: auto 5px;
+
 }
