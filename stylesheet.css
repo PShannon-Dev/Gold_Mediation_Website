@@ -10,7 +10,7 @@ body{
   height: 80vh;
   background-position: center;
   background-size: contain;
-  background-image: url(https://github.com/Modest-Creations/Gold_Mediation_Website/blob/main/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg?raw=true);
+  background-image: url(images/HandShake.jpg);
   background-attachment: fixed;
 
   display: flex;
@@ -98,22 +98,26 @@ iframe{
 
 /* Content */
 .content-wrapper{
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  padding-top: 20px;
   position: relative;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.about-section{
+/* .about-section{
   border-style: solid;
-}
+} */
 
-.office-inside{
-  margin: auto 5px;
+.office-inside img{
+  margin-left: 10%;
+  margin-top: 20 px;
   float: left;
   width: 30%;
   display: block;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 8px;
 }
 
@@ -122,7 +126,9 @@ iframe{
   float: left;
   display: block;
   font-size: 4vh;
-  width: 59%;
+  padding-left: 10px;
+  width: 49%;
+  text-align: center;
 
 }
 
@@ -141,7 +147,7 @@ iframe{
   display: inline;
   float: left;
 
-  color: grey;
+  color: white;
   text-align: center;
 
   font-size: 2vh;
