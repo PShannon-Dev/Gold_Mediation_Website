@@ -106,6 +106,12 @@ div, iframe{
   width: 272px;
 }
 
+.logo{
+  margin: auto 5px;
+  float: left;
+  width: 800px;
+
+}
 
 /*bio*/
 .bio-image{
