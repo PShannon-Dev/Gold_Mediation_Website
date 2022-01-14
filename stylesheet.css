@@ -1,7 +1,7 @@
 body{
   height: auto;
   margin: 0px;
-  background-color: whitesmoke;
+  background-color: #2f3243;
   max-width: initial;
 }
 
@@ -16,14 +16,19 @@ body{
   display: flex;
   position: relative;
 }
-
+.logo{
+  width: 50%;
+  position:fixed;
+  padding-left: 35%;
+  display: flex;
+}
 /* calendar */
 .calendar{
   margin-top: 10px;
   margin-bottom: 10px;
   position: relative;
   display: flex;
-
+  z-index: 1;
 }
 
 div{
@@ -42,40 +47,38 @@ iframe{
 .navigation-wrapper{
   padding-top: 2px;
   padding-bottom: 10px;
-  overflow: hidden;
   background-color: #2f3243;
-  position: fixed;
-  /* position: -webkit-sticky; /* Safari */
-  /* position: sticky; */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   top: 0;
   /* margin-top: 50px; */
+  margin-top: -20px;
   width: 100%;
-  opacity: 90%;
-  text-align: center;
+  opacity: 100%;
   display: flex;
 
-  z-index: 1;
-}
+  z-index: 2;
 
+}
 .nav-bar{
   display: flex;
 }
 
 .navigation-wrapper > .nav-bar > div{
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   padding-top: 20px;
   letter-spacing: 2px;
 }
 
 .nav-link-wrapper{
-  height: 25px;
+  height: 35px;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
   width: auto;
 }
 .nav-link-wrapper a{
-  color: black;
+  color: white;
   text-decoration: none;
   transition: color 0.5s;
   
@@ -87,6 +90,18 @@ iframe{
 }
 .nav-link-wrapper a:hover{
   color: gold;
+}
+
+.contact-link-wrapper{
+  text-transform: uppercase;
+}
+.contact-link-wrapper a{
+  color:white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.contact-link-wrapper a:hover{
+  color: goldenrod;
 }
 .active-nav-link{
   border-bottom: 1px solid goldenrod;
@@ -102,9 +117,13 @@ iframe{
   padding-right: 10%; */
   padding-top: 20px;
   position: relative;
-  align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: whitesmoke;
+  width: 75%;
+  box-shadow: 0px 5px 7px white;
+
+  z-index: 1;
 }
 
 /* .about-section{
@@ -135,11 +154,12 @@ iframe{
 /* Page End */
 .Page-End{
   position: relative;
-  background-color: #2f3243;
+  background-color: #40445c;
   bottom: 0;
-  height: 50vh;
+  height: 30vh;
   width: 100%;
 
+  z-index: 3;
 }
 
 .column{
@@ -155,7 +175,7 @@ iframe{
 
 .logo-end{
   display: block;
-  width: 15%;
+  width: 20%;
 }
 
 .Gold-information{
