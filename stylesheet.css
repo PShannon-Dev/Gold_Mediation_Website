@@ -187,3 +187,12 @@ iframe{
   padding-bottom: auto 5px;
 
 }
+
+@media (max-width: 500px){
+  .body{
+    height: auto;
+    margin: 0px;
+    background-color: green;
+    max-width: initial;
+  }
+}
