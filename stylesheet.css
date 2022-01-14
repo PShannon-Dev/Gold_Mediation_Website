@@ -15,14 +15,14 @@ body{
   display: flex;
   position: relative;
 }
+.container img{
+  max-width: 100%;
+}
 .logo{
   width: 50%;
   position:fixed;
   padding-left: 35%;
   display: flex;
-  align-self: center;
-  top: 0;
-  margin-left: 35%;
 }
 /* calendar */
 .calendar{
