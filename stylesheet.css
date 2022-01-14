@@ -15,6 +15,7 @@ body{
   display: flex;
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 .container img{
   max-width: 100%;
@@ -96,17 +97,6 @@ iframe{
   color: gold;
 }
 
-.contact-link-wrapper{
-  text-transform: uppercase;
-}
-.contact-link-wrapper a{
-  color:white;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-.contact-link-wrapper a:hover{
-  color: goldenrod;
-}
 .active-nav-link{
   border-bottom: 1px solid goldenrod;
   width: auto;
@@ -115,16 +105,38 @@ iframe{
   color: goldenrod !important;
 }
 
-/* Content */
-.content-wrapper{
-  /* padding-left: 10%;
-  padding-right: 10%; */
+/* rates and policies */
+.rates-n-policies{
   padding-top: 20px;
   position: relative;
   justify-content: center;
-  height: 100vh;
   background-color: whitesmoke;
-  width: 75%;
+  width: 90%;
+  box-shadow: 0px 5px 7px white;
+
+  z-index: 1;
+}
+
+.rates-n-policies ul{
+  list-style-type: square;
+  font-size: 4vh;
+}
+.rates-n-policies p{
+  font-family: Arial, Helvetica, 'Times New Roman';
+  font-size: 2vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Content */
+.content-wrapper{
+  grid-template-columns: 1fr, 1fr;
+  padding-top: 20px;
+  position: relative;
+  justify-content: center;
+  height: 100%;
+  background-color: whitesmoke;
+  width: 90%;
   box-shadow: 0px 5px 7px white;
 
   z-index: 1;
@@ -134,33 +146,35 @@ iframe{
   border-style: solid;
 } */
 
-.office-inside img{
+.content-wrapper img{
   margin-left: 10%;
   margin-top: 20 px;
   float: left;
-  width: 30%;
+  width: 40%;
   display: block;
   border: 3px solid black;
   border-radius: 8px;
 }
 
-.about{
+.content-wrapper h1{
   color: black;
   float: left;
   display: block;
-  font-size: 4vh;
+  font-size: 50px;
   padding-left: 10px;
-  width: 49%;
+  width: fit-content;
   text-align: center;
+  block-size: fit-content;
 
 }
 
 /* Page End */
 .Page-End{
+  grid-template-columns: 1fr,1fr;
   position: relative;
   background-color: #40445c;
   bottom: 0;
-  height: 30vh;
+  height: 20vh;
   width: 100%;
 
   z-index: 3;
@@ -174,9 +188,23 @@ iframe{
   color: white;
   text-align: center;
 
-  font-size: 2vh;
+  font-size: 1vh;
 }
-
+.contact-link-wrapper{
+  text-transform: uppercase;
+}
+.contact-link-wrapper a{
+  color:white;
+  transition: color 0.5s;
+}
+.contact-link-wrapper a:hover{
+  color: goldenrod;
+}
+.column .contact-link-wrapper a{
+  padding-top: 10px;
+  font-size: 2vh;
+  font-style: bold;
+}
 .logo-end{
   display: block;
   width: 20%;
@@ -185,14 +213,12 @@ iframe{
 .Gold-information{
   padding-top: auto 5px;
   padding-bottom: auto 5px;
-
+  font-size: 1vh;
 }
 
-@media (max-width: 500px){
-  .body{
-    height: auto;
-    margin: 0px;
-    background-color: green;
-    max-width: initial;
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
   }
 }
