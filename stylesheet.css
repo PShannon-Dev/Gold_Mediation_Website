@@ -12,7 +12,6 @@ body{
   background-size: cover;
   background-image: url(images/HandShake.jpg);
   background-attachment: fixed;
-  align-self: center;
   display: flex;
   position: relative;
 }
@@ -21,6 +20,8 @@ body{
   position:fixed;
   padding-left: 35%;
   display: flex;
+  align-self: center;
+  top: 0;
 }
 /* calendar */
 .calendar{
