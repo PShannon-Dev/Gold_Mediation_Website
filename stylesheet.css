@@ -14,9 +14,11 @@ body{
   background-attachment: fixed;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 .container img{
   max-width: 100%;
+  height: auto;
 }
 .logo{
   width: 50%;
