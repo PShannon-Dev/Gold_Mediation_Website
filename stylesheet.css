@@ -190,14 +190,43 @@ iframe{
   padding-top: 20px;
   position: relative;
   justify-content: center;
-  height: 100%;
+  height: fit-content;
   background-color: whitesmoke;
   width: 90%;
   box-shadow: 0px 5px 7px white;
 
   z-index: 1;
 }
+/* contact */
+.contact-wrapper{
+  padding-top: 20px;
+  position: relative;
+  justify-content: center;
+  height: fit-content;
+  background-color: whitesmoke;
+  width: 90%;
+  box-shadow: 0px 0px 7px white;
 
+  padding-left: 20px;
+}
+
+.content-wrapper h1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #2f3243;
+  size: 4vh;
+}
+
+.content-wrapper h2{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #2f3243;
+  size: 2vh;
+}
+
+.content-wrapper p{
+  size: 1vh;
+}
 /* .about-section{
   border-style: solid;
 } */
@@ -288,7 +317,7 @@ iframe{
   padding-top: 20px;
   position: relative;
   justify-content: center;
-  height: 100%;
+  height: fit-content;
   background-color: whitesmoke;
   width: 90%;
   box-shadow: 0px 5px 7px white;
