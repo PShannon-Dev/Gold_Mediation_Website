@@ -16,6 +16,8 @@ body{
   position: relative;
   overflow: hidden;
   max-width: 100%;
+
+  z-index: 0;
 }
 .container img{
   max-width: 100%;
@@ -26,14 +28,21 @@ body{
   position:fixed;
   padding-left: 35%;
   display: flex;
+  z-index: 0;
 }
 /* calendar */
+
+.calendar-wrapper{
+  width: 90%;
+  background-color: whitesmoke;
+
+  z-index: 1;
+}
 .calendar{
   margin-top: 10px;
   margin-bottom: 10px;
   position: relative;
   display: flex;
-  z-index: 1;
 }
 
 div{
@@ -48,6 +57,53 @@ iframe{
 }
 
 
+.get-info{
+  width: fit-content;
+  background-color: #2f3243;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  box-shadow: 0px 0px 5px #2f3243;
+  color: whitesmoke;
+
+  z-index: 1;
+
+}
+
+
+.get-info h1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.get-info input{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.get-info input[type=other]{
+  height: 4vh;
+  width: 75%;
+}
+
+.get-info button{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 /*nav bar*/
 .navigation-wrapper{
   padding-top: 2px;
@@ -146,26 +202,36 @@ iframe{
   border-style: solid;
 } */
 
-.content-wrapper img{
-  margin-left: 10%;
+.conference-room img{
+  margin-left: auto;
   margin-top: 20 px;
-  float: left;
+  margin-right: auto;
+  float: center;
   width: 40%;
   display: block;
   border: 3px solid black;
   border-radius: 8px;
 }
 
-.content-wrapper h1{
+.About h1{
   color: black;
-  float: left;
+  float: center;
   display: block;
   font-size: 50px;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: auto;
   width: fit-content;
   text-align: center;
   block-size: fit-content;
 
+}
+
+.About p{
+  font-size: 2vw;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  block-size: fit-content;
 }
 
 /* Page End */
@@ -215,6 +281,38 @@ iframe{
   padding-bottom: auto 5px;
   font-size: 1vh;
 }
+
+/* profile wrapper*/
+.profile-wrapper{
+  grid-template-columns: 1fr, 1fr;
+  padding-top: 20px;
+  position: relative;
+  justify-content: center;
+  height: 100%;
+  background-color: whitesmoke;
+  width: 90%;
+  box-shadow: 0px 5px 7px white;
+
+  z-index: 1;
+}
+
+.profile-bio p{
+  font-family: Arial, Helvetica, 'Times New Roman';
+  font-size: 2vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  font-weight: 50;
+}
+
+.profile-image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 5px black;
+}
+
+
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
