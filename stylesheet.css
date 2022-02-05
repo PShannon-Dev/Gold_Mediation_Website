@@ -124,6 +124,8 @@ iframe{
 }
 .nav-bar{
   display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .navigation-wrapper > .nav-bar > div{
@@ -148,6 +150,7 @@ iframe{
 .nav-link-wrapper:hover{
   border-bottom: 1px solid gold;
   width: auto;
+  padding-bottom: 10px;
 
 }
 .nav-link-wrapper a:hover{
